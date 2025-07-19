@@ -1,6 +1,6 @@
 package com.hendo.ws.EmailNotification.listener;
 
-import com.hendo.ws.EmailNotification.dto.event.ProductCreatedEvent;
+import com.ws.core.event.ProductCreatedEvent;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaHandler;
 import org.springframework.kafka.annotation.KafkaListener;

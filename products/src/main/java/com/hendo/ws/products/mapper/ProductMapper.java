@@ -1,8 +1,8 @@
 package com.hendo.ws.products.mapper;
 
-import com.hendo.ws.products.dto.event.ProductCreatedEvent;
 import com.hendo.ws.products.dto.req.CreateProductRequest;
 import com.hendo.ws.products.entity.Product;
+import com.ws.core.event.ProductCreatedEvent;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
