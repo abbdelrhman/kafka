@@ -1,14 +1,13 @@
 package com.hendo.ws.products.service.impl;
 
-import com.hendo.ws.products.dto.event.ProductCreatedEvent;
 import com.hendo.ws.products.dto.req.CreateProductRequest;
 import com.hendo.ws.products.dto.res.CreateProductResponse;
 import com.hendo.ws.products.entity.Product;
-import com.hendo.ws.products.exception.ErrorEnum;
 import com.hendo.ws.products.exception.KafkaProducerException;
 import com.hendo.ws.products.mapper.ProductMapper;
 import com.hendo.ws.products.repository.ProductRepository;
 import com.hendo.ws.products.service.ProductService;
+import com.ws.core.event.ProductCreatedEvent;
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +15,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
 import org.springframework.stereotype.Service;
-
-import java.util.UUID;
 
 @Slf4j
 @Service
